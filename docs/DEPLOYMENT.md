@@ -2,7 +2,7 @@
 
 ## Stato
 
-Prima versione implementata e build statica verificata sotto `/esnupi/`. CI e deploy Pages sono predisposti in `.github/workflows/ci.yml` e `.github/workflows/deploy.yml`, con action fissate a commit; non sono ancora stati eseguiti su GitHub. Nessun repository remoto o ambiente Pages è configurato.
+Prima versione implementata e pubblicata sotto `/esnupi/` all’indirizzo `https://michelebiena.github.io/esnupi/`. CI e deploy Pages sono definiti in `.github/workflows/ci.yml` e `.github/workflows/deploy.yml`, con action fissate a commit; entrambi sono stati eseguiti con successo su GitHub. Remoto: `https://github.com/MicheleBiena/esnupi.git`.
 
 ## GitHub Pages
 

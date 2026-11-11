@@ -6,7 +6,7 @@ Webapp personale per tracciare spese e risparmi, organizzare un budget a buste e
 
 Progettazione e prima versione funzionale al **11 novembre 2026**. Applicazione React con onboarding, saldo e diario filtrabile, rimborsi collegati, buste modificabili e archiviabili, trasferimenti, copertura delle spese, obiettivi con simulazione singola e confronto complessivo col budget, acquisto reale, ricorrenze mensili/annuali versionate, piano mensile revisionabile, backup JSON con data dell’ultimo export e reset completo. I dati sono effettivamente salvati in IndexedDB. Le migrazioni verranno aggiunte quando esisterà uno schema successivo reale da migrare.
 
-**Verifiche:** 65 test unitari/di integrazione, 9 test E2E su build statica, typecheck e build riusciti. Sito non pubblicato; repository remoto non configurato. La cartella iniziale era vuota e non era un repository Git.
+**Verifiche:** 65 test unitari/di integrazione, 9 test E2E su build statica, typecheck e build riusciti. Repository pubblico su GitHub e sito pubblicato all’indirizzo [michelebiena.github.io/esnupi](https://michelebiena.github.io/esnupi/).
 
 Destinazione: GitHub Pages. Dati finanziari nel browser del PC, fuori dal repository. Nessun account o sincronizzazione nella prima versione. Layout adattabile al telefono; accesso da un altro browser o dispositivo significa archivio distinto. Offline e installazione come app non richiesti.
 
@@ -26,7 +26,7 @@ Destinazione: GitHub Pages. Dati finanziari nel browser del PC, fuori dal reposi
 
 ## Percorso iniziale
 
-Non restano blocchi funzionali pianificati per la prima versione. I prossimi passaggi sono inserire le grafiche fornite dal committente e configurare il repository remoto per eseguire CI e deploy GitHub Pages. Leggere HANDOFF.md prima di intervenire: i limiti della verifica locale e della pubblicazione sono indicati lì.
+Non restano blocchi funzionali pianificati per la prima versione. Il prossimo passaggio è inserire le grafiche fornite dal committente. Leggere HANDOFF.md prima di intervenire: i limiti della verifica sono indicati lì.
 
 Non usare dati personali nei fixture, nelle immagini o nelle demo. Gli importi della documentazione sono esempi inventati.
 
@@ -50,4 +50,4 @@ npm run test:e2e
 
 I test E2E costruiscono l'app e verificano il risultato tramite `vite preview` sulla porta 4173. Su Windows usano Chrome installato; su Linux Chromium di Playwright (`npx playwright install --with-deps chromium`). `npm run preview` serve la build locale, non è un server di produzione.
 
-La CI esegue test e build su Node 24. Il workflow Pages è predisposto; per pubblicare occorre configurare il repository remoto e impostare GitHub Pages con sorgente GitHub Actions.
+La CI esegue test e build su Node 24. Il workflow Pages pubblica automaticamente il branch `main` tramite GitHub Actions.

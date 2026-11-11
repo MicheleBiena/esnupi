@@ -60,7 +60,7 @@ Queste prove non equivalgono a un collaudo su ogni browser o alla CI remota. Non
 - **T2 completato per lo schema attuale.** Store, transazioni, validazione, backup, data ultimo export, reset, rimborsi e revisione dei movimenti manuali/automatici con storico sono reali. Una migrazione si aggiungerà insieme a un futuro schema v2.
 - **T3 completato per la prima versione.** Riconciliazione all’apertura/ritorno in primo piano/cambio giorno, ordine entrate → piano → uscite, recupero, occorrenze uniche, concorrenza tra tab, versioni future, riattivazione, correzione ed eliminazione come `skipped` sono testati.
 - **T4 base funzionale implementata.** I percorsi principali usano dati reali: ricorrenze, piano, rimborsi, filtri, modifica/archiviazione buste e acquisto obiettivi. Restano simulazione complessiva delle quote, collaudo accessibilità esteso e grafiche definitive del committente.
-- **T5 preparato localmente.** CI e workflow Pages scritti con action fissate a commit, build e collaudo locale eseguiti. GitHub remoto, esecuzione CI remota e pubblicazione restano esterni a questo checkout.
+- **T5 completato per la prima pubblicazione.** CI e workflow Pages usano action fissate a commit; esecuzione remota e deploy sono riusciti. Sito pubblico: `https://michelebiena.github.io/esnupi/`.
 
 ## Prossimi incarichi circoscritti
 
@@ -68,9 +68,9 @@ Queste prove non equivalgono a un collaudo su ogni browser o alla CI remota. Non
 
 Inserire soltanto i file forniti dal committente nelle aree placeholder già previste. Non generare, cercare o ampliare illustrazioni.
 
-### 2. Pubblicazione
+### 2. Manutenzione della pubblicazione
 
-Configurare remoto e Pages quando owner/repository saranno noti, eseguire i workflow su GitHub e aprire l’URL finale. Verificare eventualmente Firefox e Safari prima di prometterne la compatibilità. Non aggiungere motti, banner o fixture grafici.
+Il remoto è `https://github.com/MicheleBiena/esnupi.git`; ogni push su `main` esegue CI e deploy Pages. Verificare eventualmente Firefox e Safari prima di prometterne la compatibilità. Non aggiungere motti, banner o fixture grafici.
 
 ## Ambiente di sviluppo attuale
 
