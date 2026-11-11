@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.vite/
+.vitest/
+coverage/
+test-results/
+playwright-report/
+.npm-cache/
+.npm-audit.json
+.tools/
+*.tsbuildinfo
+*.local
+.env*
+!.env.example
+esnupi-backup-*.json
