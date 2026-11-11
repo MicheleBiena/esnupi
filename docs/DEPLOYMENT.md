@@ -42,6 +42,6 @@ Versionare separatamente schema DB e formato backup. Migrazione completata prima
 
 Nessun service worker nella prima versione: evitare cache dell'app obsolete e non promettere avvio offline. Gli addebiti dovuti mentre l'app era chiusa vengono registrati alla successiva apertura con data della scadenza e indicazione di origine automatica.
 
-## Checklist prima della prima pubblicazione
+## Esito della prima pubblicazione
 
-Repository e owner corretti, base corretta, placeholder dichiarati (grafiche definitive a carico del committente), nessun dato reale nei file, scenari ACCEPTANCE verificati, backup ripristinabile, README con comandi reali e limiti dichiarati. Aprire URL finale restituito dal deploy e verificare il percorso dell'app con archivio sintetico.
+Repository e owner, base Vite, assenza di dati reali, scenari automatici, backup e URL pubblico sono stati verificati. I placeholder restano dichiarati perché le grafiche definitive sono a carico del committente.

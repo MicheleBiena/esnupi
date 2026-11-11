@@ -61,10 +61,10 @@ public/assets/           # illustrazioni, font, icone serviti localmente
 tests/                   # integrazione, fixture sintetici, E2E
 docs/
 design-system/
-.github/workflows/       # CI e deploy, da implementare
+.github/workflows/       # CI e deploy GitHub Pages
 ```
 
-Questa è la mappa di riferimento. La base di `src/` e la riconciliazione automatica sono implementate; restano alcuni comandi di revisione e schermate secondarie. Consultare [HANDOFF.md](HANDOFF.md) per lo stato effettivo.
+Questa è la mappa implementata della prima versione. Dominio, persistenza, riconciliazione, schermate e workflow sono collegati a dati reali. Consultare [HANDOFF.md](HANDOFF.md) per verifiche e limiti effettivi.
 
 ## Confini
 

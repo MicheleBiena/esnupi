@@ -50,11 +50,11 @@ Queste istruzioni sostituiscono le precedenti indicazioni su illustrazioni e ton
 
 Queste scelte risolvono dettagli lasciati aperti usando il minimo necessario al prodotto. Non richiedono un nuovo giro di approvazione per il normale sviluppo.
 
-## Dettagli da completare durante lo sviluppo
+## Dettagli operativi
 
-- Username GitHub, repository remoto e URL finale: necessari soltanto per pubblicare; non bloccano il lavoro locale.
+- Repository remoto: `https://github.com/MicheleBiena/esnupi.git`. URL pubblico: `https://michelebiena.github.io/esnupi/`.
 - Grafiche definitive: saranno inserite dal committente; gli agenti mantengono soltanto i placeholder.
 - Importi, data iniziale e ricorrenze: dati del destinatario. La prima base propone quattro buste iniziali; non trasformare nomi o dati di archivi esistenti durante modifiche editoriali.
-- Versioni delle dipendenze e Node: fissate in T0 verificando il tooling disponibile.
+- Versioni delle dipendenze e Node: fissate e verificate nel lockfile e nei workflow.
 
 Non restano domande bloccanti sulla direzione del prodotto. Eventuali nuovi comportamenti vanno registrati qui, distinguendo richiesta dell'utente e scelta implementativa.

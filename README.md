@@ -22,7 +22,7 @@ Destinazione: GitHub Pages. Dati finanziari nel browser del PC, fuori dal reposi
 8. [Lavoro per sottoagenti](docs/IMPLEMENTATION_PLAN.md): dipendenze, consegne e responsabilità.
 9. [Verifiche](docs/ACCEPTANCE.md): scenari di accettazione.
 10. [Pubblicazione e dati](docs/DEPLOYMENT.md): GitHub Pages, backup e aggiornamenti.
-11. [Passaggio di consegne attuale](docs/HANDOFF.md): stato effettivo, limiti e prossimi incarichi.
+11. [Passaggio di consegne attuale](docs/HANDOFF.md): stato effettivo, limiti e unico lavoro residuo.
 
 ## Percorso iniziale
 

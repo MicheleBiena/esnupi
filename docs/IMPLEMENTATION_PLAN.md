@@ -2,7 +2,7 @@
 
 ## Stato di partenza
 
-Il piano originale seguente descrive le responsabilità del progetto completo. Dopo il primo sviluppo, T0 è completato e T1/T2/T4 hanno una base concreta. Prima di assumere un incarico leggere [HANDOFF.md](HANDOFF.md), che elenca file presenti, verifiche e parti ancora aperte. Repository remoto e deploy non configurati.
+Il piano originale seguente documenta le responsabilità usate per costruire il progetto. T0–T5 sono completati per la prima versione e il sito è pubblicato. Prima di assumere un incarico leggere [HANDOFF.md](HANDOFF.md): l’unico lavoro pianificato ancora aperto è inserire gli asset definitivi forniti dal committente.
 
 Le responsabilità consentono futura delega esplicita. Non richiedono che tutti gli agenti vengano avviati insieme. Un coordinatore custodisce contratti condivisi e integrazione; evitare modifiche concorrenti agli stessi file.
 

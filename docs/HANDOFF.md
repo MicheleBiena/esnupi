@@ -51,7 +51,7 @@ Gli helper mutanti di budget lavorano soltanto su un draft: è `runCommand` che 
 - Screenshot desktop e telefono ispezionati. Le immagini dei test sono in `test-results/`, cartella ignorata.
 - Installazione finale dipendenze: audit npm senza vulnerabilità segnalate. Vitest aggiornato alla versione 5 per non conservare dipendenze vulnerabili individuate nel primo bootstrap.
 
-Queste prove non equivalgono a un collaudo su ogni browser o alla CI remota. Non esiste ancora uno schema dati precedente o successivo con cui provare una migrazione reale; nessuna migrazione fittizia è stata aggiunta.
+Queste prove non equivalgono a un collaudo su ogni browser. Non esiste uno schema dati precedente o successivo con cui provare una migrazione reale; nessuna migrazione fittizia è stata aggiunta.
 
 ## Stato rispetto al piano
 
@@ -59,18 +59,16 @@ Queste prove non equivalgono a un collaudo su ogni browser o alla CI remota. Non
 - **T1 completato per la prima versione.** Calendario, registro, copertura, rimborsi, finanziamento e revisione per differenza del piano, simulazioni singole e confronto complessivo col reddito sono testati.
 - **T2 completato per lo schema attuale.** Store, transazioni, validazione, backup, data ultimo export, reset, rimborsi e revisione dei movimenti manuali/automatici con storico sono reali. Una migrazione si aggiungerà insieme a un futuro schema v2.
 - **T3 completato per la prima versione.** Riconciliazione all’apertura/ritorno in primo piano/cambio giorno, ordine entrate → piano → uscite, recupero, occorrenze uniche, concorrenza tra tab, versioni future, riattivazione, correzione ed eliminazione come `skipped` sono testati.
-- **T4 base funzionale implementata.** I percorsi principali usano dati reali: ricorrenze, piano, rimborsi, filtri, modifica/archiviazione buste e acquisto obiettivi. Restano simulazione complessiva delle quote, collaudo accessibilità esteso e grafiche definitive del committente.
+- **T4 completato salvo gli asset del committente.** I percorsi principali usano dati reali: ricorrenze, piano, rimborsi, filtri, modifica/archiviazione buste, acquisto obiettivi e simulazione complessiva delle quote. Tastiera, focus, reflow e layout stretti sono collaudati. Restano soltanto le grafiche definitive.
 - **T5 completato per la prima pubblicazione.** CI e workflow Pages usano action fissate a commit; esecuzione remota e deploy sono riusciti. Sito pubblico: `https://michelebiena.github.io/esnupi/`.
 
-## Prossimi incarichi circoscritti
+## Unico incarico residuo
 
 ### 1. Grafiche definitive
 
 Inserire soltanto i file forniti dal committente nelle aree placeholder già previste. Non generare, cercare o ampliare illustrazioni.
 
-### 2. Manutenzione della pubblicazione
-
-Il remoto è `https://github.com/MicheleBiena/esnupi.git`; ogni push su `main` esegue CI e deploy Pages. Verificare eventualmente Firefox e Safari prima di prometterne la compatibilità. Non aggiungere motti, banner o fixture grafici.
+Il remoto è `https://github.com/MicheleBiena/esnupi.git`; ogni push su `main` esegue CI e deploy Pages. Il browser verificato è Chromium; non è dichiarata compatibilità specifica con browser non collaudati.
 
 ## Ambiente di sviluppo attuale
 

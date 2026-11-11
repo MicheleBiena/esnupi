@@ -70,4 +70,4 @@ Build pulita e typecheck. Servire artefatto sotto `/esnupi/`: asset presenti, ne
 
 ## Livelli e limiti
 
-Unit test sul dominio, integrazione su IndexedDB e backup, pochi E2E su scenari completi. Le prove di atomicità, calendario, retroattività e idempotenza non devono essere sostituite da soli screenshot. Browser desktop principale da usare per collaudo reale: Chromium aggiornato; aggiungere Firefox se disponibile. Compatibilità telefono di base sul layout, senza promessa di sincronizzazione.
+Unit test sul dominio, integrazione su IndexedDB e backup, pochi E2E su scenari completi. Le prove di atomicità, calendario, retroattività e idempotenza non devono essere sostituite da soli screenshot. Browser desktop collaudato: Chromium aggiornato. La prima versione non dichiara compatibilità specifica con browser non collaudati. Compatibilità telefono di base sul layout, senza promessa di sincronizzazione.
