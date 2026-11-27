@@ -14,7 +14,7 @@ export function Onboarding() {
   const [error, setError] = useState('');
   const commandId = useRef(crypto.randomUUID());
   return <div className="welcome-layout">
-    <section className="welcome-copy"><h1>Configura esnupi</h1><p>Inserisci saldo e data di partenza. Potrai poi assegnare i soldi alle buste e registrare entrate e spese.</p><div className="artwork-placeholder" aria-hidden="true">Placeholder grafica</div><div className="privacy-note"><Icon name="shield" /><p>I dati restano in questo browser.<br />Non serve un account.</p></div></section>
+    <section className="welcome-copy"><h1>Configura esnupi</h1><p>Inserisci saldo e data di partenza. Potrai poi assegnare i soldi alle buste e registrare entrate e spese.</p><figure className="welcome-artwork"><img src={`${import.meta.env.BASE_URL}assets/solo_esnupi.svg`} width="512" height="512" alt="" /><figcaption>esnupi protegge i tuoi soldini!</figcaption></figure><div className="privacy-note"><Icon name="shield" /><p>I dati restano in questo browser.<br />Non serve un account.</p></div></section>
     <section className="panel setup-panel"><h2>Saldo iniziale</h2><p className="muted">Inserisci il saldo disponibile alla data di partenza, inclusi i risparmi.</p>
       <form onSubmit={event => {
         event.preventDefault(); if (busy) return; setBusy(true); setError('');

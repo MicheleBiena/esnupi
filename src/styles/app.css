@@ -204,7 +204,9 @@ progress::-moz-progress-bar { background: var(--color-woodstock); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
 
 .actions-only { justify-content: flex-end; }
-.artwork-placeholder { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 340px; aspect-ratio: 380 / 265; margin: 24px auto; border: 1px dashed var(--color-input-border); border-radius: 8px; color: var(--color-muted); font-size: 14px; }
+.welcome-artwork { width: 100%; max-width: 240px; margin: 24px auto; text-align: center; }
+.welcome-artwork img { display: block; width: 100%; height: auto; }
+.welcome-artwork figcaption { margin-top: 8px; font-weight: 600; }
 @media (max-width: 767px) {
   .transaction-list li:has(.transaction-actions) { flex-wrap: wrap; }
   .transaction-list li:has(.transaction-actions) .transaction-description { flex-basis: calc(100% - 52px); }
