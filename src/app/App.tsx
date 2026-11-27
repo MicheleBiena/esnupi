@@ -15,6 +15,8 @@ import { RefundDialog } from '../features/transactions/RefundDialog';
 import { Icon } from '../shared/ui/Icon';
 import type { Operation } from '../domain/types';
 
+const logoUrl = `${import.meta.env.BASE_URL}assets/logo_completo.svg`;
+
 const pages = [
   { path: '/mese', title: 'Il mio mese', icon: 'home', subtitle: 'Saldo, entrate e spese del mese.' },
   { path: '/movimenti', title: 'Movimenti', icon: 'journal', subtitle: 'Registra e consulta entrate e spese.' },
@@ -37,14 +39,14 @@ export function App() {
   const main = useRef<HTMLElement>(null);
   useEffect(() => { main.current?.focus(); document.title = `${page?.title ?? 'esnupi'} — esnupi`; }, [path, page?.title, !!snapshot.settings]);
 
-  if (loading) return <main className="startup"><span className="brand-word">esnupi<span>.</span></span><p role="status">Caricamento dati…</p></main>;
+  if (loading) return <main className="startup"><img className="brand-image" src={logoUrl} width="600" height="160" alt="esnupi" /><p role="status">Caricamento dati…</p></main>;
   if (startupError) return <main className="startup"><h1>Impossibile aprire l’archivio</h1><p role="alert">{startupError}</p><p>I dati non sono stati cancellati. Controlla che questo browser consenta il salvataggio dei dati del sito.</p><button className="button secondary" onClick={() => location.reload()}>Riprova</button></main>;
 
   const initialized = !!snapshot.settings;
   const monthLabel = new Intl.DateTimeFormat('it-IT', { month: 'long', year: 'numeric' }).format(new Date(`${month}-15T12:00:00`));
   const monthNavigation = <div className="month-switcher"><button className="icon-button" aria-label="Mese precedente" disabled={!snapshot.settings || month <= monthOf(snapshot.settings.startDate)} onClick={() => setMonth(shiftMonth(month, -1))}><Icon name="left" size={18} /></button><span>{monthLabel}</span><button className="icon-button" aria-label="Mese successivo" disabled={month >= monthOf(today())} onClick={() => setMonth(shiftMonth(month, 1))}><Icon name="right" size={18} /></button></div>;
   return <><a href="#main" className="skip-link" onClick={event => { event.preventDefault(); main.current?.focus(); }}>Vai al contenuto</a><div className={`app-shell ${initialized ? '' : 'is-welcome'}`}>
-    <aside className="sidebar"><a href="#/mese" className="brand" aria-label="esnupi, il mio mese"><span className="brand-word">esnupi<span>.</span></span></a>
+    <aside className="sidebar"><a href="#/mese" className="brand" aria-label="esnupi, il mio mese"><img className="brand-image" src={logoUrl} width="600" height="160" alt="" /></a>
       {initialized ? <><nav aria-label="Navigazione principale">{pages.slice(0, 5).map(item => <a key={item.path} href={`#${item.path}`} aria-current={path === item.path ? 'page' : undefined}><Icon name={item.icon} />{item.title}{path === item.path && <span className="nav-dot" />}</a>)}</nav><div className="sidebar-bottom"><a href="#/impostazioni" className="settings-link" aria-current={path === '/impostazioni' ? 'page' : undefined}><Icon name="settings" />Impostazioni</a><span className="local-label"><span />Salvato in questo browser</span></div></> : <div className="sidebar-bottom"><span className="local-label"><Icon name="shield" size={16} />Dati locali</span></div>}
     </aside>
     <main id="main" ref={main} tabIndex={-1} className="main-content">

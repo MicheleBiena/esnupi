@@ -13,3 +13,6 @@ playwright-report/
 .env*
 !.env.example
 esnupi-backup-*.json
+
+# Progetti grafici locali
+design-source/
