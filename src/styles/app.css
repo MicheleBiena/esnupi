@@ -206,7 +206,7 @@ progress::-moz-progress-bar { background: var(--color-woodstock); }
 .actions-only { justify-content: flex-end; }
 .welcome-artwork { width: 100%; max-width: 240px; margin: 24px auto; text-align: center; }
 .welcome-artwork img { display: block; width: 100%; height: auto; }
-.welcome-artwork figcaption { margin-top: 8px; font-weight: 600; }
+.welcome-artwork figcaption { margin-top: 12px; font-size: clamp(20px, 2vw, 24px); font-weight: 700; line-height: 1.25; }
 @media (max-width: 767px) {
   .transaction-list li:has(.transaction-actions) { flex-wrap: wrap; }
   .transaction-list li:has(.transaction-actions) .transaction-description { flex-basis: calc(100% - 52px); }
